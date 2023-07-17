@@ -162,7 +162,8 @@ By the end of this section, we will have developed robust Random Forest and XGBo
 
 ![image](https://github.com/EfthimiosVlahos/TLC-Data-Science-Engineering-Project/assets/56899588/c51705f2-c992-43f1-97c5-d67a03834f30)
 
-All in all, I utilized Random Forest and XGBoost models to predict whether a customer is likely to leave a tip or not. However, the performance of these models in predicting tipping behavior wasnt too great and performed slighlty better than avg across all metrics.
+
+All in all, I utilized Random Forest and XGBoost models to predict whether a customer is likely to leave a tip or not. However, the performance of these models in predicting tipping behavior wasnt too great and performed slightly better than avg across all metrics.
 Despite careful selection of variables and predictors, as well as extensive preprocessing and feature engineering, the models struggled to capture the complex relationships and patterns within the data. This led to suboptimal predictive accuracy and limited success in identifying non-tipping customers accurately. Possible reasons for the underperformance of the models could be the presence of unaccounted variables or features that play a crucial role in determining tipping behavior. It is also plausible that the relationships between the available variables and the tipping outcome are inherently challenging to capture using the chosen algorithms.
 Further analysis and exploration of the dataset may be necessary to identify additional influential factors that contribute to tipping behavior. This could involve incorporating domain expertise, exploring different feature engineering techniques, or considering alternative modeling approaches that better accommodate the unique characteristics of the data.
 
