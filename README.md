@@ -1,5 +1,5 @@
 # Analyzing NYC TLC Data for Data-Driven Decision Making
-The goal of this project is to perform data analytics on TLC (NYC Taxi Limousine Commission) data using various tools and technologies, including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio
+The goal of this project is to perform data analytics on TLC (NYC Taxi Limousine Commission) data using various tools and technologies, including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio.
 # Table of contents
 
 - [00. Abstract](#abstract-main)
@@ -11,15 +11,13 @@ The goal of this project is to perform data analytics on TLC (NYC Taxi Limousine
     - [01.5 BigQuery](#BigQuery)
     - [01.6 Data Model](#DataModel)
     - [01.7 Conclusion of Data Engineering part](#Conclusion)
-- [02. Overview of Data Science Exploration](#overview)
-    - [03.1 Image Data](#images_-overview)
-    - [03.2 Numerical Data](#num-overview)
-    - [03.3 Experiment Processes](#experiment-overview)
-    - [03.4 Experiment Results](#results-overview)
-    - [03.5 Feature Efficiency and Misclassification Analysis of Numerical Dataset](#efficiency-overview)
-- [05. Conclusions and Future Work](#conclusion-summary)
-- [06. Contributions](#contribute-summary)
-- [07. Referneces](#references-summary)
+- [02. Overview of Data Science Exploration](#ds)
+    - [02.1 Building the DataFrame and Organizing Claims Data](#Building)
+    - [02.2 Exploratory Data Analysis (EDA) and Visualization](#EDA)
+    - [02.3 Hypothesis Testing](#Hypothesis)
+    - [02.4 Modeling Approach and Regression Model Building](#Modeling)
+    - [02.5 Machine Learning Model for Predicting Non-Tipping Customers](#Machine-Learning)
+- [03. Conclusions and Future Work](#conclusion-summary)
 
 # Abstract <a name="abstract-main"></a>
 The TLC Data Science/Engineering project aims to analyze the NYC TLC (Taxi and Limousine Commission) data to gain valuable insights and facilitate data-driven decision making. Leveraging a combination of cutting-edge tools and technologies, including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio, this project undertakes a comprehensive exploration of the NYC TLC dataset.
@@ -76,9 +74,9 @@ The data model employed in the Data Engineering section revolves around construc
 ## Conclusion of Data Engineering part <a name="Conclusion"></a>
 In conclusion, the Data Engineering section of the TLC Data Science/Engineering project encompasses a robust architecture and data model that leverages tools and technologies such as GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, and BigQuery. This section enables efficient data collection, transformation, and storage, providing a solid foundation for subsequent data analysis tasks. By employing this architecture and data model, the project achieves scalability, flexibility, and reliability in its data processing workflows, paving the way for successful data-driven decision making.
 
-# Overview of Data Science Exploration <a name="overview"></a>
+# Overview of Data Science Exploration <a name="ds"></a>
 
-## Building the DataFrame and Organizing Claims Data <a name="dataset-overview"></a>
+## Building the DataFrame and Organizing Claims Data <a name="Building"></a>
 In this section of the project, my focus is on building a high-quality DataFrame using the TLC data, ensuring data integrity and consistency throughout the process.
 The step-by-step approach for building and organizing the TLC data is as follows:
 
@@ -92,7 +90,7 @@ The step-by-step approach for building and organizing the TLC data is as follows
 
 By following this approach, I will build a high-quality DataFrame from the TLC data, ensuring data integrity and consistency.
 
-## 1.2 Exploratory Data Analysis (EDA) and Visualization <a name="overview"></a>
+## Exploratory Data Analysis (EDA) and Visualization <a name="EDA"></a>
 
 In this section of the project, my focus is on conducting thorough exploratory data analysis (EDA) on the TLC data to gain insights into its characteristics, patterns, and underlying structure. The objective is to develop a comprehensive understanding of the data before proceeding with further analysis.
 
@@ -108,7 +106,7 @@ The step-by-step approach for conducting EDA and visualization is as follows:
 
 In conclusion, this section will involve conducting exploratory data analysis on the TLC dataset, leveraging visualizations and dashboards to understand its characteristics and patterns effectively.
 
-## 1.3 Hypothesis Testing <a name="overview"></a>
+## Hypothesis Testing <a name="Hypothesis"></a>
 
 This section of the project focuses on performing hypothesis testing on the TLC dataset to explore and investigate specific research questions. The objective is to gather empirical evidence and make statistically supported conclusions about the dataset.
 
@@ -126,7 +124,7 @@ The step-by-step approach for conducting hypothesis testing is as follows:
 
 In conclusion, this section will encompass hypothesis testing on the TLC dataset, enabling us to investigate specific research questions and draw statistically supported conclusions. Through careful hypothesis formulation, appropriate testing methods, and comprehensive documentation of findings, we will contribute valuable insights to the TLC project and support informed decision-making.
 
-## 1.4 Modeling Approach and Regression Model Building <a name="overview"></a>
+## Modeling Approach and Regression Model Building <a name="Modeling"></a>
 
 In this section of the project, my primary focus is to construct a regression model using the TLC dataset. I will meticulously select appropriate variables and predictors to ensure the model captures the essential factors influencing the outcome. Rigorous checks will be conducted to verify model assumptions and ensure model validation.
 
@@ -142,7 +140,7 @@ The step-by-step approach for building and evaluating the regression model is as
 
 In conclusion, this section will encompass the construction of a well-tailored regression model using the TLC dataset. I will diligently select variables and predictors, validate the model assumptions, and evaluate its performance using appropriate statistical techniques. By interpreting the results, we will summarize the findings and gain valuable insights into the factors that significantly influence the outcome variable.
 
-## 1.5 Machine Learning Model for Predicting Non-Tipping Customers <a name="overview"></a>
+## Machine Learning Model for Predicting Non-Tipping Customers <a name="Machine-Learning"></a>
 
 In this section of the Jupyter Notebook, our main objective is to develop robust machine learning models, specifically Random Forest and XGBoost classifiers, to predict whether a customer is likely to leave a tip or not. The significance of this predictive model lies in its potential to serve as a valuable tool for taxi drivers, who heavily depend on tips.
 
@@ -159,3 +157,10 @@ The step-by-step approach for building these models is as follows:
 - **Model Deployment:** After achieving satisfactory performance, I will prepare the trained models for deployment. This involves saving the models in a format that can be easily integrated into the existing infrastructure or app utilized by taxi drivers.
 
 By the end of this section, we will have developed robust Random Forest and XGBoost classifiers capable of predicting whether a customer is likely to leave a tip. This predictive model will serve as a valuable tool for taxi drivers, empowering them to make informed decisions and optimize their services to maximize their earnings.
+
+# Conclusions and Future Work of Data Exploration <a name="conclusion-summary"></a>
+
+All in all, I utilized Random Forest and XGBoost models to predict whether a customer is likely to leave a tip or not. However, the performance of these models in predicting tipping behavior wasnt too great and performed slighlty better than avg across all metrics.
+Despite careful selection of variables and predictors, as well as extensive preprocessing and feature engineering, the models struggled to capture the complex relationships and patterns within the data. This led to suboptimal predictive accuracy and limited success in identifying non-tipping customers accurately. Possible reasons for the underperformance of the models could be the presence of unaccounted variables or features that play a crucial role in determining tipping behavior. It is also plausible that the relationships between the available variables and the tipping outcome are inherently challenging to capture using the chosen algorithms.
+Further analysis and exploration of the dataset may be necessary to identify additional influential factors that contribute to tipping behavior. This could involve incorporating domain expertise, exploring different feature engineering techniques, or considering alternative modeling approaches that better accommodate the unique characteristics of the data.
+
