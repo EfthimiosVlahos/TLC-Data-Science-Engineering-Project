@@ -20,7 +20,8 @@ The goal of this project is to perform data analytics on TLC (NYC Taxi Limousine
 - [03. Conclusions and Future Work](#conclusion-summary)
 
 # Abstract <a name="abstract-main"></a>
-The TLC Data Science/Engineering project aims to analyze the NYC TLC (Taxi and Limousine Commission) data to gain valuable insights and facilitate data-driven decision making. Leveraging a combination of cutting-edge tools and technologies, including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio, this project undertakes a comprehensive exploration of the NYC TLC dataset.
+The TLC Data Science/Engineering project aims to analyze the NYC TLC (Taxi and Limousine Commission) data to gain valuable insights and facilitate data-driven decision making. Leveraging a combination of cutting-edge tools and technologies, including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio, this project undertakes a comprehensive exploration of the [NYC TLC dataset](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
+
 
 The project comprises several key phases, beginning with the collection and organization of the TLC data into a high-quality DataFrame. Ensuring data integrity and consistency is of paramount importance, as it forms the foundation for all subsequent analyses. Through meticulous preprocessing and cleaning techniques, the resulting DataFrame serves as a reliable basis for in-depth investigation.
 
